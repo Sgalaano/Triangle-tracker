@@ -1,27 +1,18 @@
-function getResult(){
-var hypotenuse= parseFloat(prompt("side c"));
-var opposite = parseFloat(prompt("side b"));
-var adjacent = parseFloat(prompt("side a"));
-/* var determine = function(hypotenuse,opposite, adjacent){
-if (hypotenuse === opposite && opposite === adjacent && hypotenuse === adjacent){
-alert("Equilateral");
+var h = parseFloat(prompt("Enter dimension of first side"));
+var s = parseFloat(prompt("Enter dimension of Second side"));
+var w = parseFloat(prompt("Enter dimension of Third side"));
+var sides = function(a,b,c){
+return( a+b>c && b+c>a && c+a>b)
 }
-else if ((hypotenuse === opposite && opposite === adjacent) (hypotenuse != adjacent && opposite !== adjacent));
-alert("Isosceles");
+if (sides(h,s,w) && h===s && s===w){
+alert("This forms an Equilateral triangle.")
 }
-determine(); *
-
-
-if(hypotenuse === opposite && hypotenuse === hypotenuse && opposite === adjacent){
-alert("Equilateral");
+else if(sides(h,s,w) && h===s || h===w || w===s){
+alert ("This forms an isosceles triangle.")
 }
-else if(hypotenuse === opposite || hypotenuse === adjacent || opposite === adjacent){
-alert("Isosceles");
+else if(sides(h,s,w) && h!=w!=s){
+alert ("This forms a scarlene triangle " )
 }
-else if((hypotenuse + opposite) <= adjacent || (hypotenuse + adjacent) <= opposite || (opposite + adjacent) <= hypotenuse) {
-alert("Not a definite triangle");
-}
-else{
-alert("Scalene");
-}
+else {
+alert("ERROR, INVALID MEASUREMENTS ")
 }
