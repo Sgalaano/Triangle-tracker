@@ -1,0 +1,25 @@
+.body{
+  background-image: url(Triangle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0px;
+  margin-bottom:200px;
+  font-size: 40px;
+  color: blue;
+}
+.footer-icons{
+  margin-left: 1000px;
+
+}
+.header{
+  background-color: pink;
+}
+.input{
+  text-decoration-color: red;
+  align-self: auto;
+}
+#h1{
+  color: pink;
+  margin-left: 300px;
+}
