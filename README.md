@@ -1,4 +1,4 @@
-Triangle-tracker
+TRIANGLE TRACKER
 { Triangle-tracker}, {23/3/2019}
 By Galaano Suleiman
 Description
