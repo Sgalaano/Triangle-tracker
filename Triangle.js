@@ -1,19 +1,22 @@
-function Triangletracker(){
-var length=parseFloat(prompt("side length"));
-var width=parseFloat(prompt("side width"));
-var height=parseFloat(prompt("side height"));
+var a = parseFloat(prompt("Enter your preferred length:"));
+var b = parseFloat(prompt("Enter your preferred width:"));
+var c = parseFloat(prompt("Enter your preferred height:"));
 
-if(length===width && length===height && width===height){
-alert("Equilateral triangle");
+var sides = function(a,b,c){
+return( a+b>c && b+c>a && c+a>b)
 }
-else if(length===width || length===height || width===height){
-alert("Isosceles triangle");
+if (sides(a,b,c) && a===b && b===c){
+alert("This forms an Equilateral triangle")
 }
-else if((length+width)<=height || (length+height)<=width || (width+height)<=length){
-alert("Invalid measurements")
+
+else if(side(a,b,c) && a===b || b===c || a===c){
+alert("This forms an isosceles triangle")
 }
+
+else if(sides(a,b,c) && a!=b!=c){
+alert("This forms a scarlene triangle")
+}
+
 else{
-alert("Scarlene triangle");
+alert("ERROR INVALID MEASUREMENTS")
 }
-}
- ''
