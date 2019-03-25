@@ -35,7 +35,7 @@ OUTPUT EXAMPLE: This NOT A TRIANGLE
 
 The Program DOES NOT RECOGNIZE TEXTS
 
-Input : sideA = X sideB = y+x sideC = 90
+Input : sideA = X sideB = y+x sideC = 90.
 
 OUTPUT EXAMPLE: INVALID MEASUREMENTS
 
