@@ -11,7 +11,26 @@
     <script src="Triangle.js"></script>
     <p> This is a method which shows the type of triangle if one enters the values on the sides of the triangle</p>
     <img src="triangletypes.png" height="500px" width="500px"> <br>
-    <p><em>There is a pop box where you input your values and give you the type of triangle:</em></p>
+      <p><em>input your values here:</em></p>
+      <div class="container">
+        <label for="sideA">Length:</label>
+        <input type="number" id="sideA" >
+        <br>
+        <br>
+        <label for="sideB">Width:</label>
+        <input type="number" id="sideB" >
+        <br>
+        <br>
+        <label for="sideC">Height:</label>
+        <input type="number" id="sideC" >
+        <br>
+        <br>
+        <input class="button" type="button" value="Track" onclick="triangleTracker()">
+        <input class="button" type="button" value="Reset" onclick="reset()">
+        <p id="output"></p>
+    </div>
+    <p><em>input your values here:</em></p>
+    <
   </body>
 
 </html>

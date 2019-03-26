@@ -1,22 +1,25 @@
-var a = parseFloat(prompt("Enter your preferred length:"));
-var b = parseFloat(prompt("Enter your preferred width:"));
-var c = parseFloat(prompt("Enter your preferred height:"));
+function triangleTracker(){
+  var sideA = parseFloat(document.getElementById("sideA").value);
+  var sideB = parseFloat(document.getElementById("sideB").value);
+  var sideC= parseFloat(document.getElementById("sideC").value);
 
-var sides = function(a,b,c){
-return( a+b>c && b+c>a && c+a>b)
-}
-if (sides(a,b,c) && a===b && b===c){
-alert("This forms an Equilateral triangle")
+  if(isNaN(sideA,sideB,sideC) === true ||  (sideA<=0 || sideB<=0 || sideC<=0)){
+      output.innerHTML=("NOT A NUMBER!")
+    }
+    else if (sideA === sideB && sideB === sideC) {
+     output.innerHTML=("Equilateral Triangle!")
+    }
+      else if (sideA === sideB || sideA === sideC || sideB === sideC ) {
+         output.innerHTML=("Issoscles Triangle!")
+    }
+    else if ((sideA+sideB)<=sideC || (sideA+sideC)<=sideB || (sideB+sideC)<=sideA) {
+     output.innerHTML=("NOT A TRIANGLE!")
+    }
+    else if (sideA !== sideB && sideB !== sideC ) {
+       output.innerHTML=("Scalene Triangle!")
+    }
 }
 
-else if(side(a,b,c) && a===b || b===c || a===c){
-alert("This forms an isosceles triangle")
-}
-
-else if(sides(a,b,c) && a!=b!=c){
-alert("This forms a scarlene triangle")
-}
-
-else{
-alert("ERROR INVALID MEASUREMENTS")
+function reset() {
+  location.reload();
 }
